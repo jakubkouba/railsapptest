@@ -12,6 +12,7 @@ class HelloController < ApplicationController
     ip = `ifconfig en0 | grep netmask`.split.second
     os = `sw_vers | grep ProductName`.split.last
     version = (`sw_vers | grep ProductVersion`).split.last
+    blah
 
     @system_info ||= {
       status: 'OK',
@@ -24,5 +25,11 @@ class HelloController < ApplicationController
         version: version
       }
     }
+
+  rescue => e
+      { 
+        status: 'Failed',
+        error: e.message
+      }
   end
 end
