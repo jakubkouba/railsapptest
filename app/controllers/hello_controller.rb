@@ -19,7 +19,7 @@ class HelloController < ApplicationController
         ruby_version: ruby_version,
         ip: ip,
         os: os,
-        version: version
+        version: '1.2.3'
       }
     }
 
