@@ -1,0 +1,12 @@
+version: 0.2
+
+pases:
+  install:
+    runtime-versions:
+      ruby: 3.0.5
+    pre_build:
+      commands:
+      - echo 'Installing deploy tools' 
+    build:
+      commands:
+        - echo 'Deploying'
