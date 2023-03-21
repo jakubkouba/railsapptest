@@ -39,7 +39,6 @@ COPY . /app
 COPY bin/entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
-ENV RAILS_ENV=production
 
 # Configure the main process to run when running the image
 EXPOSE 3000

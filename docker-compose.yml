@@ -9,6 +9,7 @@ services:
       - "80:3000"
     environment:
       RAILS_ENV: production
+      SECRET_KEY_BASE: 5d7896ab27103c960d3df9d733487e5370c8edf3790408626dc2cf3ca4ea0a21d6acfb17c4d0b79cd06ce1990b78d122fd0c6ab8978a7bd4c4ed288f04d664e9
   test:
     build:
       context: .
